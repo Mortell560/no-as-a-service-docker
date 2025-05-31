@@ -80,6 +80,30 @@ You can also change the port using an environment variable:
 PORT=5000 npm start
 ```
 
+
+## Self-Hosting (Docker)
+
+### 1. Clone this repository
+```bash
+git clone https://github.com/Mortell560/no-as-a-service-docker
+cd no-as-a-service-docker
+```
+
+### 2. Build the image
+```bash
+docker build -t no .
+```
+
+### 3. Start the server
+```bash
+docker run -d -p 3000:3000 no-as-a-service:no
+```
+
+You can also change the port using environment variables:
+```bash
+docker run -d -p 5000:5000 -e PORT=5000 no-as-a-service:no
+```
+
 ---
 
 ## 📁 Project Structure
