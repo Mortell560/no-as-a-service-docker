@@ -10,4 +10,4 @@ RUN npm install -g npm@latest && npm install && npm fund
 
 COPY . /app
 
-CMD [ "/bin/sh -c PORT=${PORT} npm start" ]
+CMD [ "npm start" ]
